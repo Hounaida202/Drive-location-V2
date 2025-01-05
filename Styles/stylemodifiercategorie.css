@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .nav-links li a.active {
+    font-weight: bold;
+  }
+  
+  main {
+    padding: 40px 20px;
+  }
+  
+  .edit-category-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .edit-category-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .edit-category-form label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .edit-category-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .edit-category-form .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .edit-category-form .submit-btn,
+  .edit-category-form .cancel-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .edit-category-form .submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+  }
+  
+  .edit-category-form .submit-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .edit-category-form .cancel-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+  }
+  
+  .edit-category-form .cancel-btn:hover {
+    background-color: #e53935;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
