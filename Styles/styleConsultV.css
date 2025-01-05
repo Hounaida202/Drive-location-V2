@@ -1,0 +1,135 @@
+
+
+/* Style de la Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: white;
+}
+
+.navbar .logo h1 {
+  font-size: 2rem;
+  color: #f4a261;
+}
+
+.navbar .nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar .nav-links li {
+  padding: 0.5rem 1rem;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  color: #f4a261;
+}
+
+/* Section des véhicules */
+.vehicles-section {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.vehicles-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.vehicles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.vehicle-card {
+  background-color: white;
+  height: 550px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.vehicle-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.vehicle-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.vehicle-card h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.vehicle-card p {
+  color: #555;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.vehicle-card .availability {
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.vehicle-card .available {
+  color: green;
+}
+
+.vehicle-card .not-available {
+  color: red;
+}
+
+/* Style du Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+.vehicle-card .reserve-btn {
+    /* height: 30px; */
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  background-color: #28a745; /* Couleur verte */
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for the "Réserver maintenant" button */
+.vehicle-card .reserve-btn:hover {
+  background-color: #218838; /* Légère variation de vert pour l'effet hover */
+}
