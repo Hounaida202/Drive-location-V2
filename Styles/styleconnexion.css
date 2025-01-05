@@ -1,0 +1,146 @@
+
+
+  /* Style global de la page */
+/* Style global de la page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: block; /* Empêche l'alignement horizontal global */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex; /* Garde la navbar en display flex pour aligner horizontalement les éléments */
+  justify-content: space-between; /* Espace entre les éléments de la navbar */
+  align-items: center; /* Aligne les éléments verticalement au centre */
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: white;
+}
+
+.navbar .logo h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Utiliser flex pour aligner les liens horizontalement */
+  gap: 1rem; /* Espacement entre les liens */
+}
+
+.nav-links li {
+  display: inline; /* Les éléments de liste s'affichent en ligne */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f4a261;
+}
+
+/* Section de connexion */
+#connexion {
+  display: block; /* Section non en flex */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h2.text-center {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+.form-login {
+  display: block;
+  gap: 1.5rem;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 0.8rem;
+  font-size: 1rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #f4a261;
+}
+
+.btn-login {
+  padding: 0.8rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-login:hover {
+  background-color: #f4a261;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.text-blue-500 {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.text-blue-500:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  display: block; /* Footer non en flex */
+  width: 100%;
+}
+
