@@ -1,0 +1,176 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: white;
+}
+
+.navbar .logo h1 {
+  font-size: 2rem;
+  color: #f4a261;
+}
+
+.navbar .nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar .nav-links li {
+  padding: 0.5rem 1rem;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  color: #f4a261;
+}
+.cars-section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.cars-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 250px;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.card p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.card .price {
+  color: #f4a261;
+  font-weight: bold;
+}
+
+.card .stars {
+  color: gold;
+  margin-top: 0.5rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+
+
+footer p {
+  margin: 0;
+}
+
+/* Navbar active */
+.nav-links .active {
+  color: #f4a261;
+  font-weight: bold;
+}
+
+
+.add-category-btn-container {
+  margin: 20px;
+  text-align: center;
+}
+
+.add-category-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.add-category-btn:hover {
+  background-color: #0056b3;
+}
+/* Container des boutons */
+.card-actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Style des boutons */
+.card-actions .btn-modifier,
+.card-actions .btn-supprimer {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+/* Bouton Modifier */
+.card-actions .btn-modifier {
+  background-color: #4CAF50; /* Vert */
+}
+
+.card-actions .btn-modifier:hover {
+  background-color: #45a049;
+}
+
+/* Bouton Supprimer */
+.card-actions .btn-supprimer {
+  background-color: #f44336; /* Rouge */
+}
+
+.card-actions .btn-supprimer:hover {
+  background-color: #e53935;
+}
