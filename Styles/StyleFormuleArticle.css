@@ -1,0 +1,149 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    background-color: rgb(16, 4, 4);
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Editor Section */
+  .editor-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .editor-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #444;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+  }
+  
+  .editor-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .editor-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  .editor-form input, 
+  .editor-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fdfdfd;
+  }
+  
+  .editor-form textarea {
+    resize: vertical;
+  }
+  
+  .editor-form .form-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .editor-form .save-btn, 
+  .editor-form .cancel-btn
+  ,.tag-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f4f4f4;
+    cursor: pointer;
+  }
+  
+  .editor-form .save-btn:hover {
+    background-color: #dff0d8;
+  }
+  
+  .editor-form .cancel-btn:hover {
+    background-color: #f2dede;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #ececec;
+    border-top: 1px solid #ddd;
+    margin-top: 30px;
+    color: #555;
+  }
+  #tags{
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      background-color: #f4f4f4;
+      cursor: pointer;
+  }
+  
+  /* Style pour les cartes d'option */
+  .selected-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .selected-option {
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .selected-option p {
+    margin: 0;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-buttons {
+    margin-top: 20px;
+  }
+  

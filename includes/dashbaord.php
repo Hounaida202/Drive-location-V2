@@ -80,7 +80,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete']) && isset($_
       </div>
       <ul class="nav-links">
         <li><a href="dashbaord.php">Catégories</a></li>
-        <li><a href="connexion.html">Réservations</a></li>
+        <li><a href="../includes/gestionReservation.php">Réservations</a></li>
+        <li><a href="../includes/gestion_articles.php">Gestion</a></li>
+
         <li><a href="categories.html" class="active">Logout</a></li>
       </ul>
     </nav>

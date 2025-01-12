@@ -108,4 +108,61 @@ public static function AddNewReservation($date1, $date2, $lieu, $vehicule_id, $u
             return $arrayVehicules;
         }
 
+public static function getreservationattente(){
+    $bd= database::getInstance()->getConnection();
+    $sql = "SELECT 
+    reservations.reservation_id,
+    reservations.date1,
+    reservations.date2,
+    reservations.lieu,
+    reservations.status,
+    users.user_name,
+    vehicules.vehicule_model,
+    vehicules.picture
+FROM reservations
+JOIN users on reservations.user_id = users.user_id
+JOIN vehicules on reservations.vehicule_id = vehicules.vehicule_id
+WHERE reservations.status = 'en attente'";
+$stmt=$bd->prepare($sql);
+$stmt->execute();
+$resultat=$stmt->fetchAll(PDO::FETCH_ASSOC);
+return $resultat;
+}
+
+public static function updateStatus($reservationId,$statusnew){
+    $bd= database::getInstance()->getConnection();
+    $sql = " UPDATE reservations SET status =:statusnew 
+    WHERE reservation_id=:reservationId
+    ";
+    $stmt=$bd->prepare($sql);
+    $stmt->bindParam(':statusnew', $statusnew);
+    $stmt->bindParam(':reservationId', $reservationId);
+    $stmt->execute();
+
+}
+
+public static function getreservationaccepte(){
+    $bd= database::getInstance()->getConnection();
+    $sql = "SELECT 
+    reservations.reservation_id,
+    reservations.date1,
+    reservations.date2,
+    reservations.lieu,
+    reservations.status,
+    users.user_name,
+    vehicules.vehicule_name,
+    vehicules.prix,
+    vehicules.disponibilite,
+    vehicules.vehicule_model,
+    vehicules.picture
+FROM reservations
+JOIN users on reservations.user_id = users.user_id
+JOIN vehicules on reservations.vehicule_id = vehicules.vehicule_id
+WHERE reservations.status = 'accepte'";
+$stmt=$bd->prepare($sql);
+$stmt->execute();
+$resultat=$stmt->fetchAll(PDO::FETCH_ASSOC);
+return $resultat;
+}
+
 }

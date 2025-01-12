@@ -1,0 +1,140 @@
+    /* Styles généraux */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      
+      /* Navbar styles */
+      .navbar {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .navbar .logo h1 {
+        margin: 0;
+        font-size: 28px;
+      }
+      
+      .navbar .nav-links {
+        list-style: none;
+        display: flex;
+      }
+      
+      .navbar .nav-links li {
+        margin-left: 20px;
+      }
+      
+      .navbar .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s ease;
+      }
+      
+      .navbar .nav-links a:hover {
+        color: orange;
+      }
+      
+      /* Container pour le contenu principal */
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+      
+      /* Section des cartes */
+      .cards-section {
+        display: flex;
+        flex-direction: column; /* Cartes empilées verticalement */
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+      }
+      
+      .card {
+        background-color: white;
+        width: 100%;
+        max-width: 600px;
+        min-width: 200px;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .card:hover {
+        transform: scale(1.05); /* Effet de zoom au survol */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      
+      .card h3 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+      
+      .card p {
+        font-size: 16px;
+        color: #666;
+      }
+      
+      .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+      
+      /* Section des articles */
+      .article-section {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        max-width: 1000px;
+        margin-top: 40px;
+      }
+      
+      .article {
+        background-color: white;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      
+      .article h2 {
+        font-size: 28px;
+        color: #333;
+      }
+      
+      .article p {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.6;
+      }
+      
+      /* Footer styles */
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        margin-top: 40px;
+      }
+      
+      footer p {
+        margin: 0;
+        font-size: 14px;
+      }

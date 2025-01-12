@@ -73,10 +73,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <h1>CarRent</h1>
       </div>
       <ul class="nav-links">
-        <li><a href="user_page.php">Categories</a></li>
-        <li><a href="vehiculesReserves.php">Reservations</a></li>
-        <li><a href="">Véhicules</a></li>
-        <li><a href="categories.html">Logout</a></li>
+      <li><a href="../includes/user_page.php">Categories</a></li>
+      <li><a href="../includes/vehiculesReserves.php">Reservations</a></li>
+        <li><a href="../includes/blog.php">blogs</a></li>
       </ul>
     </nav>
   </header>

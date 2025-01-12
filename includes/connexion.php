@@ -25,7 +25,7 @@ try {
 
                 // Redirection basée sur l'ID de l'utilisateur
                 if ($user['role_id'] == 1) {
-                    header('Location: ../includes/dashbrd.php'); // Corrigé
+                    header('Location: ../includes/dashbaord.php'); // Corrigé
                 } else if ($user['role_id'] == 2) {
                     header('Location: ../includes/user_page.php');
                 } else {

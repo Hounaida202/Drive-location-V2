@@ -85,6 +85,8 @@ $lesVehicules= vehicule::getAllVehiculesByCategory($_GET['categorie_id']);
                <button type="submit" class="btn-supprimer" name="delete">Supprimer</button>
            </form>
 
+
+           
     </div>
       <!-- <div class="card-actions">
       </div> -->
